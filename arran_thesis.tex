@@ -1,0 +1,35 @@
+\documentclass[a4paper,12pt,twoside]{book}
+\include{macros/style}
+\include{macros/use_packages}
+\usepackage[titletoc,title]{appendix}
+
+% \usepackage[T1]{fontenc}
+% \usepackage{tgadventor}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+
+\begin{document}
+
+% Front Matter
+\input frontmatter/fm
+
+\newpage
+
+	\include{chapters/1/chapter_intro}
+	\include{chapters/2/chapter_data}
+	\include{chapters/3/chapter_apres}
+	\include{chapters/4/chapter_ocean}
+	\include{chapters/5/chapter_conclusion}
+% 	\appendix
+% 	\TOCadd{Appendix}
+	\include{chapters/appendix/chapter_app}
+
+
+\TOCadd{References}
+\renewcommand{\bibname}{References}
+\bibliographystyle{myplainnat.bst}
+\bibliography{arran_bib.bib}
+
+\end{document}
