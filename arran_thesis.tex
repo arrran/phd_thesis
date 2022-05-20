@@ -1,4 +1,9 @@
+% %no figures
+% \documentclass[a4paper,12pt,twoside,draft]{book}
+
+%yes figures
 \documentclass[a4paper,12pt,twoside]{book}
+
 \include{macros/style}
 \include{macros/use_packages}
 \usepackage[titletoc,title]{appendix}
@@ -17,17 +22,17 @@
 
 \newpage
 
-% 	\include{chapters/1/chapter_intro}
-% 	\include{chapters/2/chapter_data}
-% 	\include{chapters/3/chapter_apres}
-% 	\include{chapters/4/chapter_ocean}
+	\include{chapters/1/chapter_intro}
+	\include{chapters/2/chapter_data}
+	\include{chapters/3/chapter_apres}
+	\include{chapters/4/chapter_ocean}
 	\include{chapters/5/chapter_conclusion}
-% 	\include{chapters/appendix/chapter_app}
+	\include{chapters/appendix/chapter_app}
 
 
 \TOCadd{References}
 \renewcommand{\bibname}{References}
 \bibliographystyle{myplainnat.bst}
-\bibliography{arran_bib.bib}
+\bibliography{arran_bib_caps.bib}
 
 \end{document}
