@@ -66,15 +66,17 @@ For example, \cite {marsh2016high} and \cite{stanton2013channelized} used ApRES 
 % Higher resolution surveys of basal mass balance, have revealed large changes in basal mass balance over small scales. For example, \cite{chartrand2020basal} estimated basal mass balance at the apex of a basal channel to be 22 m/yr while 2-3 km away basal mass balance decayed to zero.  Channels are observed on ice sheets across Antarctica, and are thought to concentration  buoyant meltwater plumes. See Chapter \ref{ch:data} for a more detailed description of channel formation.  have been used to observe changes in basal mass balance at channels  
 % Because ApRES can be used to observe the ice base from  the surface, it is a popular method to carry out spatial surveys of basal mass balance \citep{stanton2013channelized, marsh2016high}.
 
-\subsection{Goal and Structure}
+\subsection{Goal and structure}
 Here we present a time series of ApRES observations in a location situated at the apex of a basal channel at the grounding line of the Kamb Ice Stream (Figure~\ref{fig:geophysics_overview_apres}).  The objective of this chapter is to constrain processes at the ice--ocean interface, and the structure of the interface. We aim to identify changes (or lack of changes) in basal mass balance and associate those changes to large scale processes in the channel, e.g. tides or subglacial drainage.
  The channel has been identified in previous studies by \cite{alley2016impacts,kim2016active,goeller2015subglacial,le2009subglacial} and \cite{horgan2017poststagnation}. These authors proposed that the channel is sourced by subglacial drainage from the main trunk of the Kamb Ice Stream. 
 
 In this chapter, we start by describing data processing  which follow the method of \cite{nicholls2015ground}, using code from \cite{stewart2018ice} and methods to estimate accretion from \cite{vavnkova2021nature} (Section \ref{sec:apres_method}). In Section \ref{sec:apres_method} we refer to the basal mass balance observed with the ApRES as `melt rate' in line with ApRES nomenclature. In Section \ref{sec:apres_results}, results from the time series are presented, including time series of apparent accretion rates, the amplitudes of the basal reflector, and strain rates. In this section, we use the terminology coined by \cite{vavnkova2021nature}, referring to the observed basal mass balance as `apparent accretion'. Apparent accretion refers to the change in basal mass balance estimated using a dielectric constant of glacial ice to convert phase to displacement, substituting the unknown electromagnetic properties of the accreted marine ice (as described in Section \ref{sec:apres_method}), and neglecting the effects of multiple basal reflections.
  Lastly, we discuss the physical meaning of apparent accretion rate and the implications of the time series (Section \ref{sec:apres_discussion}).
 
-\subsection{Site description}
 \newpage
+
+\subsection{Site description}
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.65\textwidth]{chapters/2/geophysics_overview.png}
@@ -149,12 +151,12 @@ Under conditions of basal accretion changes in the electromagnetic properties of
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{chapters/3/melt_calc.png}
-\caption[ApRES example]{Example signals from repeat ApRES radar surveys 140 hours apart, shown as `f' and `g'. A) The fourier transform of the averaged radar chirp, amplitude of the return signal as a function of depth. The clear basal reflection is at 433 m. B) The radar signal
-C) Vertical displacement of tracked internal reflectors (red dots). The green line shows the linear fit through internal reflectors, and the red stars show the observed displacement of the shelf base, and the displacement due to vertical strain. The black vertical line shows the distance between extrapolated strain and the basal reflector, representing estimated melt. Blue stars show the bounds of estimated strain error. }
+\caption[ApRES example]{Example signals from repeat ApRES radar surveys 140 hours apart, shown as `f' and `g'. Top: The fourier transform of the averaged radar chirp, amplitude of the return signal as a function of depth. The clear basal reflection is at 433 m. Centre: The radar signal.
+Bottom: Vertical displacement of tracked internal reflectors (red dots). The green line shows the linear fit through internal reflectors, and the red stars show the observed displacement of the shelf base, and the displacement due to vertical strain. The black vertical line shows the distance between extrapolated strain and the basal reflector, representing estimated melt. Blue stars show the bounds of estimated strain error. }
 \label{fig:example_signal}
 \end{figure}
 
-\subsection{Melt Rates}
+\subsection{Melt rates}
 
 To calculate rates of change, we looked at the differences between two radar returns taken from the same point at different times.
 The raw recorded data describes amplitude as a function of frequency. These data are fourier transformed to give a complex signal amplitude in terms of delay time. Assuming a constant velocity of radio waves, delay time is proportional to depth \citep{nicholls2015ground}. 
@@ -184,8 +186,6 @@ When measuring basal mass balance with a base of glacial ice, these problems do 
 Lastly, we estimated accurate amplitudes, and amplitude based ranges to radar reflections for the time--series.
 Following \cite{vavnkova2021nature}, we improved on the accuracy of the picked bed reflector used to find basal mass balance (chosen with the routine as described by \citep{stewart2018ice}). We chose three points adjacent to the originally picked bed reflector, and used least squares to calculate a quadratic fit to the three points. The maximum of the quadratic gave the amplitude and the range to the basal reflector.
 Basal mass balance is calculated from the amplitude based range by subtracting the estimated strain from the difference between two range estimates and dividing by the time period.
-
-\newpage
 
 \section{Results } \label{sec:apres_results}
 
