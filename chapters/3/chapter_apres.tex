@@ -29,7 +29,7 @@ At a large scale, basal  ice shelf melt is driven by the circulation of water fr
 Due to this circulation pattern, melting is greatest at the perimeter of an  ice shelf: at the ice front where ice is in close contact with the open ocean \citep[e.g.][] {goldberg2019accurately}, and the grounding line \citep[e.g.][] {mankoff2012role}, where deeper ice is in contact with warm salty water which sits at the bottom of  ice shelf cavity. In the centre of an  ice shelf, the ice--ocean interface is generally at equilibrium or shows accretion \citep[e.g.][] {rignot2013ice}. This pattern is clear in the basal mass balance recorded by a traverse of the Ross Ice Shelf by \cite{snodgrass2021melting} shown in Figure \ref{fig:RIS_melt}.
 
 \subsection{Observations of  ice shelf melt}
-While these theories of ocean circulation beneath ice shelves are generally supported by direct observations, such generalisations neglect small scale variations in basal mass balance which are commonly observed, both temporally \citep[e.g.][]{stewart2018ice} and spatially \citep[e.g.][]{marsh2016high}.
+While these theories of ocean circulation beneath ice shelves are broadly supported by direct observations, such generalisations neglect small scale variations in basal mass balance which are commonly observed, both temporally \citep[e.g.][]{stewart2018ice} and spatially \citep[e.g.][]{marsh2016high}.
 
 %\subsubsection{(temp) Observations of temporarily changing melt}
 
@@ -37,13 +37,13 @@ Temporal changes in basal melt can be observed directly using acoustic altimeter
 
 Alternatively, the surface--based Autonomous Phase-sensitive Radio-Echo Sounder (ApRES) instrument surveys precise measurements of melt rates on ice shelves by comparing small changes in the phase of radar waves reflected off the ice base between repeat radar surveys. 
 Relative to drilling a hole through the  ice shelf to access the basal interface directly, ApRES surveys are inexpensive in resources and time. ApRES can be used to better understand processes in ice \citep[e.g.][]{case2022phase} and at the ice base \citep[e.g.][]{sun2019topographic}.  However, inference of basal processes with ApRES is an estimation which relies on assumptions about the properties of the ice and ocean outlined in Section \ref{sec:apres_method} \citep{brennan2014phase}.
-The ApRES was primarily designed for observing negative basal mass balance (melt). Most ApRES surveys observe basal melt, \citep[e.g.][] {lindback2019spatial,davis2018variability}, however, the ApRES has been used to observe accretion \citep[e.g.][] {stewart2018ice}, and new techniques are being developed to improve the interpretation of accretion \citep{vavnkova2020observations}. 
+The ApRES was primarily designed for observing negative basal mass balance (melt). Most ApRES surveys observe basal melt, \citep[e.g.][] {lindback2019spatial,davis2018variability}, however, the ApRES has been used to observe accretion \citep[e.g.][] {stewart2018ice}, and new techniques are being developed to improve the interpretation of accretion \citep{vavnkova2020observations, vavnkova2021nature}. 
 
 % Some new methods are being developed to improve processing of accretion time series for example . 
 
 ApRES time series of basal melt under ice shelves can reveal connections between certain ocean forcings and the ice--ocean interface. While melt time series close to the front of ice shelves generally show seasonality and relationships with ocean conditions \citep[e.g.][]{lindback2019spatial}, time series from further inland are often difficult to interpret and show little connection to our understanding of ocean circulation \citep[e.g.][]{davis2018variability}. 
 \cite{lindback2019spatial} present two ApRES time series of basal melt from the Nivlisen Ice Shelf. The first, 4 km from the ice front, shows seasonality while the second, 35 km from the  ice shelf front, does not. Both sites show diurnal periods, semidiurnal periods and a fortnightly period, which the authors attribute to tidal cycles. 
- %see lindback for fourier analysis
+ %see lindback for Fourier analysis
 Similarly, \citet{sun2019topographic} record basal melt about 90 km from the  ice shelf front, near the grounding line of the Roi Baudouin Ice Shelf and see no seasonality though find a diurnal period which they attribute to a tidal cycle. 
 Alternatively, \cite{hirano2020strong} see strong seasonality in basal melt at a location 45 km inland from the Shirase Glacier Tongue, 16 km from the north of the southernmost SGT grounding line.
 At a location hundreds of kilometres from the open ocean, \citet{vavnkova2020observations} observe little periodicity though see intermittent melt and accretion. 
@@ -80,7 +80,7 @@ In this chapter, we start by describing data processing  which follow the method
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.65\textwidth]{chapters/2/geophysics_overview.png}
-\caption[Map of field data]{Map of study area showing all field data (repeated from Figure \ref{fig:geophysics_overview_apres}). ApRES was placed continuously recording at the light green `X'.
+\caption[Map of field data]{Map of study area showing all field data (repeated from Figure \ref{fig:geophysics_overview}). ApRES was placed continuously recording at the light green `X'.
 Background image is MODIS MOA 2009 \citep{haran2014modis}. 
 }
 \label{fig:geophysics_overview_apres}
@@ -108,7 +108,7 @@ Remote sensing data shows present day surface lowering at the head of the channe
 Developed by \cite{brennan2014phase} and \cite{nicholls2015ground}, ApRES uses multiple frequency radio waves to image the ice base and internal ice reflectors to detect high precision mass balance.
 ApRES is a frequency modulated continuous wave system, which unlike single frequency radar, generates and emits a continuous wave signal. The system's advantage over traditional radar systems is phase coherence and a superior signal to noise ratio. The instrument (Figure \ref{fig:apres_setup}) consists of two skeleton slot antennas, a GPS to keep the internal clock syncronised, a battery, and an enclosed radar board and radar controller, which also logs the data. The ApRES was deployed following \cite{nicholls2018apres}, with antenna $\approx 9$ m apart, 1 m deep and with parallel orientation. The instrument set up is shown in Figure \ref{fig:apres_setup}. 
 
-The ApRES was set up to survey the ice every hour through the following ob-board procedure:
+The ApRES was set up to survey the ice every hour through the following on-board procedure:
 The first antenna transmitted a sequence of 20 chirps of radio waves. Each chirp ramped linearly from 200 to 400 MHz over a 1s period. The second antenna received the signal,  first passing it through amplifiers, and an adjustable attenuator set on deployment.  %craig thesis
 The received signal and a copy of the transmitted signal was then multiplied with a frequency mixer, in a process known as deramping. This removed the linear ramp of frequencies produced by a chirp, and produced an output signal with frequencies of the sum and differences of the received and transmitted signal. This was low pass filtered to isolate the difference,  which contains a beat frequency proportional to the range, or distance from the antenna to the basal reflector. 
 The signal was then high--pass filtered, amplifying weaker, more distant reflections to correct for effects of geometric spreading and dielectric absorption.  
@@ -151,16 +151,16 @@ Under conditions of basal accretion changes in the electromagnetic properties of
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{chapters/3/melt_calc.png}
-\caption[ApRES example]{Example signals from repeat ApRES radar surveys 140 hours apart, shown as `f' and `g'. Top: The fourier transform of the averaged radar chirp, amplitude of the return signal as a function of depth. The clear basal reflection is at 433 m. Centre: The radar signal.
+\caption[ApRES example]{Example signals from repeat ApRES radar surveys 140 hours apart, shown as `f' and `g'. Top: The Fourier transform of the averaged radar chirp, amplitude of the return signal as a function of depth. The clear basal reflection is at 433 m. Centre: The radar signal.
 Bottom: Vertical displacement of tracked internal reflectors (red dots). The green line shows the linear fit through internal reflectors, and the red stars show the observed displacement of the shelf base, and the displacement due to vertical strain. The black vertical line shows the distance between extrapolated strain and the basal reflector, representing estimated melt. Blue stars show the bounds of estimated strain error. }
 \label{fig:example_signal}
 \end{figure}
 
-\subsection{Melt rates}
+\subsection{Melt rates} \label{sec:apres_meltrates}
 
 To calculate rates of change, we looked at the differences between two radar returns taken from the same point at different times.
-The raw recorded data describes amplitude as a function of frequency. These data are fourier transformed to give a complex signal amplitude in terms of delay time. Assuming a constant velocity of radio waves, delay time is proportional to depth \citep{nicholls2015ground}. 
-The two way travel time between the radar antenna and the ice base reflector is dependent on firn compaction, surface accumulation, vertical strain and hardware changes like instrument performance \citep{nicholls2015ground}. To correct for these factors and solve for melt rates, stable internal reflectors are detected for two separate radar returns and used as reference points to track vertical displacement. 
+The raw recorded data describes amplitude as a function of frequency. These data are Fourier transformed to give a complex signal amplitude in terms of delay time. Assuming a constant velocity of radio waves, delay time is proportional to depth \citep{nicholls2015ground}. 
+The two-way travel time between the radar antenna and the ice base reflector is dependent on firn compaction, surface accumulation, vertical strain and hardware changes like instrument performance \citep{nicholls2015ground}. To correct for these factors and solve for melt rates, stable internal reflectors are detected for two separate radar returns and used as reference points to track vertical displacement. 
 
 To eliminate the effects of hardware changes, surface accumulation and firn compaction, a single stable reflector beneath the firn is needed \cite{jenkins2006interactions}. 
 We first aligned the two depth--profiles by cross-correlating the amplitudes of the depth--profiles immediately below the firn layer, and subtracted the difference from one return. This provided a vertical correction which accounted for accumulation, firn compaction and changes in hardware. 
@@ -183,7 +183,7 @@ When measuring basal mass balance with a base of glacial ice, these problems do 
 
 \subsection{Amplitude}
 
-Lastly, we estimated accurate amplitudes, and amplitude based ranges to radar reflections for the time--series.
+Lastly, we estimated higher resolution and accuracy amplitudes, and amplitude based ranges to radar reflections for the time--series.
 Following \cite{vavnkova2021nature}, we improved on the accuracy of the picked bed reflector used to find basal mass balance (chosen with the routine as described by \citep{stewart2018ice}). We chose three points adjacent to the originally picked bed reflector, and used least squares to calculate a quadratic fit to the three points. The maximum of the quadratic gave the amplitude and the range to the basal reflector.
 Basal mass balance is calculated from the amplitude based range by subtracting the estimated strain from the difference between two range estimates and dividing by the time period.
 
@@ -195,7 +195,7 @@ Basal mass balance is calculated from the amplitude based range by subtracting t
 \centering
 \includegraphics[width=0.85
 \textwidth]{chapters/3/alltimeseries.png}
-\caption[Time series]{A) Time series of apparent accretion calculated at 7--hr intervals (blue line), overlaid by 28 hour intervals (orange line). Errors for the 28 hour interval time series are shown by shaded transparent orange areas. B) Spectrogram of the time series shown in (A), derived using the 28 hour rolling interval. C) Time series of strain thickening calculated at 7--hr intervals (blue line), overlaid by 28 hour intervals (orange line). Errors for the 28 hour interval time series are shown by shaded transparent orange areas. D)  Spectrogram of the strain thickening time series, derived using the 28 hour rolling interval. E) Time series of estimated tidal velocity magnitude at the channel using output provided by \cite{padman2002new}. F) Spectrogram of the tidal time series.
+\caption[Time series]{A) Time series of apparent accretion calculated at 7--hr intervals (blue line), overlaid by 28 hour intervals (orange line). Errors for the 28 hour interval time series are shown by shaded transparent orange areas (easier to see in Figure \ref{fig:zoom_timeseries}). B) Spectrogram of the time series shown in (A), derived using the 28 hour rolling interval. C) Time series of strain thickening calculated at 7--hr intervals (blue line), overlaid by 28 hour intervals (orange line). Errors for the 28 hour interval time series are shown by shaded transparent orange areas. D)  Spectrogram of the strain thickening time series, derived using the 28 hour rolling interval. E) Time series of estimated tidal velocity magnitude at the channel using output provided by \cite{padman2002new}. F) Spectrogram of the tidal time series.
 }
 \label{fig:alltimeseries}
 \end{figure}
@@ -262,9 +262,11 @@ The power spectral density (Figure \ref{fig:spectral_density}) of apparent accre
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{chapters/3/synthetic.pdf}
-\caption[Method analysis]{In black, the power spectrum of a synthetic time series which is the addition of randomly sine waves with periods from 14 to 50 hours. Colours show power spectrum of the time series resampled over different intervals as $y[n] = (x[n-w/2]+x[n+w/2])/2$ where $x$ is the original time series, $y$ is the resampled time series and $w$ is the interval length.}
+\caption[Method analysis]{In black, the power spectrum of a synthetic time series which is the addition of random sine waves with periods from 14 to 50 hours. Colours show power spectrum of the time series resampled over different intervals as $y[n] = (x[n-w/2]+x[n+w/2])/2$ where $x$ is the original time series, $y$ is the resampled time series and $w$ is the interval length.}
 \label{fig:synthetic}
 \end{figure}
+
+Melt rates are calculated from two ApRES observations. These observations must be separated in time to allow for the accurate calculation of strain rates  (described in Section \ref{sec:apres_meltrates}). To calculate strain rates we track internal reflectors in the ice, this is only possible if enough time has passed for the reflectors to have moved relative to each other. It follows that a wide window (>1-2 days) is required to calculate strain. Conversely, we aim to capture melt signals at as high a frequency as possible. Calculating melt every 1-2 days would miss semidiurnal tidal periods. It follows that we use a large sliding interval to calculate melt rate, which is wide enough to track strain, but slides in time at a small enough interval to capture high frequencies. In this section we describe this method and validate its usage.
 
 Calculating strain and melt over larger intervals has the effect of smoothing the apparent accretion (Figure \ref{fig:alltimeseries}). The effect of a large interval on frequencies is similar to that of a comb filter. The output of the filter periodically drops to a local minimum at multiples of the interval frequency $1 / 2T_w, 3 / 2T_w, 5 / 2T_w \cdot$, where $T_w$ is the interval width. The distortion to frequencies is therefore specific to and different for each interval length. Figure \ref{fig:synthetic} shows the effect of interval size on a synthetic time series. The time series is a random sum of sine waves with periods from 14 to 50 hours, which we resample using a sliding average of two points to simulate our melt rate calculations. The sliding average is defined as $y[n] = (x[n-w/2]+x[n+w/2])/2$ where $x$ is the original time series, $y$ is the resampled time series and $w$ is the interval length. The resampled time series show similar patterns of frequency distributions though the amplitudes of certain frequencies change. Longer intervals show the most distortion, filtering out frequencies greater than 1.5 1/day, and showing less fidelity than shorter intervals for frequencies greater than 1.5 1/day. Intervals of 7 and 28 hour demonstrate good fidelity.
 
@@ -362,7 +364,7 @@ In theory, this strain thickening will not cause crevassing like that observed b
 We discount significant active flexing as a cause of strain, as the effect of flexure on strain would be thickening in the upper half of the ice column and  thinning in the lower half \citep{vaughan2012subglacial}, which is not observed (Figure \ref{fig:example_signal} shows strain thickening throughout the entire ice column).
 In comparison to 4.6 x $10^{-4}$ / yr at our site \cite{alley2018continent} finds that the along flow strain rate in the area is positive and $< 1 \times 10 ^{-6}$/yr, and the transverse strain rate is close to zero, $< 1 \times 10 ^{-6}$/yr.
 
-Apparent accretion is the rate of change in range to the basal reflector minus the strain thickening rate. While strain thickening contributes to just 24\% of the apparent accretion estimates over the whole time series, variation in apparent accretion is closely related to strain thickening. This is evident when comparing zoomed in apparent accretion and strain thickening in Figure \ref{fig:alltimeseries} B and E, and is also shown by the similar spectrograms of Figure \ref{fig:spectral_density} A and B. While this close correlation could be caused by errors in the melt rate calculation method, there is no clear evidence of such errors. Calculated strain thickening rate errors are small relative to the signal. These errors are calculated by the quality of fit as shown in Figure \ref{fig:12strains}, which confirms we have a linear strain profile, and the linear fit is reasonable. 
+Apparent accretion is the rate of change in range to the basal reflector minus the strain thickening rate. While strain thickening contributes to just 24\% of the apparent accretion estimates over the whole time series, variation in apparent accretion is closely related to strain thickening. This is evident when comparing zoomed in apparent accretion and strain thickening in Figure \ref{fig:zoom_timeseries}, and is also shown by the similar spectrograms of Figure \ref{fig:spectral_density} A and B. While this close correlation could be caused by errors in the melt rate calculation method, there is no clear evidence of such errors. Calculated strain thickening rate errors are small relative to the signal. These errors are calculated by the quality of fit as shown in Figure \ref{fig:12strains}, which confirms we have a linear strain profile, and the linear fit is reasonable. 
 Using larger intervals (up to 100 hours) to calculate strain thickening rates results in a similar close correlation of oscillations between strain thickening and melt rate, with similar dominant frequencies (Figure \ref{fig:compare_window}). This suggests that the length of our interval is robust, and is not corrupting strain thickening rate calculations. 
 The close correlation between strain thickening and melt rates is most likely due to the fact both melt and strain thickening are principally driven by the same external forces. In this case, external forces such as tides drive apparent accretion and strain thickening to vary in sync. Alternatively, the correlation could be due to the dependence of melt rate on strain thickening rates or vice versa.  For example, feedbacks may stabilise the basal elevation,  resulting in a basal mass balance which essentially cancels out the strain thickening. This is an unlikely explanation, as melt and accretion feedbacks caused by changes in the strain, or the converse, are unlikely to occur at the same time scales. 
 % For example, with a vertically stratified, stable ocean column in the channel cavity, a lowering of the ice base due to strain thickening would bring the ice interface into saltier waters, increasing melt. Conversely, a rise in the ice base would decrease salinity at the ice base, lowering melt rates. 
